@@ -1,0 +1,21 @@
+@mixin befor_circle {
+    &::before {
+        content: '';
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        top: -25%;
+        left: 0;
+    }
+}
+
+@mixin animation_btn {
+    transition: all 0.27s ease-in-out; /* Плавна анімація */
+    &:hover {
+        color:rgb(201, 255, 255);
+        transform: scale(1.25); /* Збільшуємо на 10% */
+    }
+}

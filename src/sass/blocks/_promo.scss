@@ -1,0 +1,48 @@
+.promo {
+    min-height: 100vh;/* ця одиниця дивиться на монітор, це зроблено щоб якщо екран великий чи малий користувач бачив лише 1 секцію і другу не зміг побачити поки не прокрутить вниз */
+    position: relative;
+    background: url('../img/it_notebook.jpg') no-repeat 50%/cover;/* щоб не повторювалась картинка і background size буде cover 50% це зміщення на 50% */
+    padding-top: 205px;
+    &__title {
+        width: 535px;
+        margin-top: 10px;
+    }
+    &__buttons {
+        margin-top: 25px;
+        display: flex;
+        width: 250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        color: #ffffff;
+        font-weight: bold;
+        @include animation_btn;
+    }
+    &__circle {
+        position: relative;
+        @include befor_circle;/* використання міксину */
+        padding-left: 10px;
+        z-index: 2;
+    }
+}
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: $main-color;
+    }
+    span.hamburger_long {
+        width: 36px;
+    }
+}
