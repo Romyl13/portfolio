@@ -27,13 +27,35 @@
 }
 a {
     text-decoration: none;
+    color: #000000;
+}
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {/* щоб лекше було адаптувати речі деякі поза контейнером то просто адаптуй самий контейнер) */
     width: 1140px;
+    height: 100vh;
     margin: 0 auto;
 }
 
+.nav {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #e9dfdf;
+}
 
 
 
@@ -43,3 +65,5 @@ a {
 @import 'blocks/button';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
+@import 'blocks/contact';
+@import 'blocks/aboutMe';

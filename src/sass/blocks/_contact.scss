@@ -1,0 +1,137 @@
+.contact {
+    position: absolute;
+    transition: all 0.5s ease;
+    i {
+        font-size: 40px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            transition: all 0.27s ease-in-out; /* Плавна анімація */
+            &:hover {
+                color:rgb(231, 169, 255);
+                transform: scale(1.25); /* Збільшуємо на 10% */
+            }
+        }
+    }
+    &__link-text {
+        background: $second-color;
+        border-radius: 13px;
+        transition: all 0.27s ease-in-out; /* Плавна анімація */
+        &:hover {
+            color:rgb(252, 167, 255);
+            transform: scale(1.05);
+        }
+    }
+    &__tittle {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        font-size: 36px;
+        margin-bottom: 13px;
+    }
+    &__button-exit {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $main-color;
+        border: 1px solid $main-color;
+        border-radius: 100%;
+        i {
+            font-size: 50px;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &-item {
+            border: 2px solid $main-color;
+            background: $second-color;
+            border-radius: 13px;
+            padding: 4px;
+            transition: all 0.27s ease-in-out;
+            &:hover {
+                transition: all 0.27s ease-in-out; /* Плавна анімація */
+                &:hover {
+                    color:rgb(231, 169, 255);
+                    transform: scale(1.25); /* Збільшуємо на 10% */
+                }
+            }
+        }
+    }
+    .contact__menu {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 17px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        z-index: 999;
+      }
+      
+      .contact__menu.active {
+        background: $main-color;
+        opacity: 0.89;
+        width: 50vw;
+        height: 30vh;
+        display: block;
+        transition: all 0.5s ease;
+      }
+}
+
+
+
+
+
+
+/*    <div class="contact">
+        <div class="contact__menu">
+            <div class="contact__tittle">Зв'язатися зі мною:</div>
+            <div class="contact__social">
+                <a href="tel:+380660573733">
+                    <div class="contact__social-item">
+                        <a class="contact__link" href="tel:+380660573733" target="_blank">
+                            <i class='bx bx-mobile' ></i>
+                        </a>
+                        <a href="tel:+380660573733"><div class="contact__link-text">Мій номер</div></a>
+                    </div>
+                </a>
+                <a href="mailto:anonum345@gmail.com">
+                    <div class="contact__social-item">
+                        <a class="contact__link" href="mailto:anonum345@gmail.com">
+                            <i class='bx bx-envelope' ></i>
+                        </a>
+                        <a href="mailto:anonum345@gmail.com"><div class="contact__link-text">Моя Пошта</div></a>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="contact__social-item">
+                        <a class="contact__link" href="https://t.me/Ubermanchxzvc" target="_blank">
+                            <i class='bx bxl-telegram' ></i>
+                        </a>
+                        <a href="https://t.me/Ubermanchxzvc"><div class="contact__link-text">Telegram</div></a>
+                    </div>
+                </a>
+                <a contact__social-item href="">
+                        <a class="contact__link" href="https://www.instagram.com/romyl_romulus/?next=%2F" target="_blank">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="https://www.instagram.com/romyl_romulus/?next=%2F"><div class="contact__link-text">Instagram</div></a>
+                </a>
+            </div>
+            <button class="contact__button-exit">
+                <i class='bx bx-exit'></i>
+            </button>
+        </div>
+    </div> */

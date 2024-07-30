@@ -48,6 +48,9 @@
 
 
     <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- BOXICONS CDN LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <aside class="sidepanel">
@@ -71,7 +74,82 @@
         <div class="sidepanel__divider"></div>
     </aside>
 
-    <div class="menu">
+
+    <div class="nav">
+        <div class="menu">
+            <div class="menu__logo-content">
+                <div class="menu__logo">
+                    <i class='bx bxl-visual-studio' ></i>
+                    <div class="menu__logo-name">Romyl</div>
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="menu__nav-list">
+                <li>
+                        <i class='bx bx-search' ></i>
+                        <input type="text" placeholder="Пошук...">
+                    <span class="menu__tooltip">Пошук</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user'></i>
+                        <span class="menu__list-name">Я - Romyl</span>
+                    </a>
+                    <span class="menu__tooltip">Я</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-chevron-up-square'></i>
+                        <span class="menu__list-name">Досвід</span>
+                    </a>
+                    <span class="menu__tooltip">Досвід</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-code-alt'></i>
+                        <span class="menu__list-name">Вміння</span>
+                    </a>
+                    <span class="menu__tooltip">Вміння</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-briefcase'></i>
+                        <span class="menu__list-name">Роботи</span>
+                    </a>
+                    <span class="menu__tooltip">Роботи</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-purchase-tag' ></i>
+                        <span class="menu__list-name">Ціни</span>
+                    </a>
+                    <span class="menu__tooltip">Ціни</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-book-content'></i>
+                        <span class="menu__list-name">Контакти</span>
+                    </a>
+                    <span class="menu__tooltip">Контакти</span>
+                </li>
+            </ul>
+            <div class="menu__profile-content">
+                <div class="menu__profile">
+                    <div class="menu__profile-details">
+                        <img src="img/yourself/photoOfMe.jpg" alt="yourself">
+                        <div class="menu__name-job">
+                            <div class="menu__name">Роман Волошин</div>
+                            <div class="menu__job">Web-розробник</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-envelope' id="log_out"></i>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <!-- <div class="menu">
         <div class="menu__block">
             <div class="menu__close">
                 <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,23 +177,154 @@
 
         </div>
         <div class="menu__overlay"></div>
+    </div> -->
+
+    <div class="contact">
+        <div class="contact__menu">
+            <div class="contact__tittle">Зв'язатися зі мною:</div>
+            <div class="contact__social">
+                <div class="contact__social-item">
+                    <a class="contact__link" href="tel:+380660573733" target="_blank">
+                        <i class='bx bx-mobile' ></i>
+                    </a>
+                    <a href="tel:+380660573733" target="_blank"><div class="contact__link-text">Мій номер</div></a>
+                </div>
+                <div class="contact__social-item">
+                    <a class="contact__link" href="mailto:anonum345@gmail.com">
+                        <i class='bx bx-envelope' ></i>
+                    </a>
+                    <a href="mailto:anonum345@gmail.com" target="_blank"><div class="contact__link-text">Моя Пошта</div></a>
+                </div>
+                <div class="contact__social-item">
+                    <a class="contact__link" href="https://t.me/Ubermanchxzvc" target="_blank">
+                        <i class='bx bxl-telegram' ></i>
+                    </a>
+                    <a href="https://t.me/Ubermanchxzvc" target="_blank"><div class="contact__link-text">Telegram</div></a>
+                </div>
+                <div class="contact__social-item">
+                    <a class="contact__link" href="https://www.instagram.com/romyl_romulus/?next=%2F" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://www.instagram.com/romyl_romulus/?next=%2F" target="_blank"><div class="contact__link-text">Instagram</div></a>
+                </div>
+            </div>
+            <button class="contact__button-exit">
+                <i class='bx bx-exit'></i>
+            </button>
+        </div>
     </div>
 
+
+
+
     <section class="promo">
-        <div class="hamburger">
-            <span></span><span class="hamburger_long"></span><span></span>
-        </div>
+        <!-- <div class="hamburger"> -->
+            <!-- <span></span><span class="hamburger_long"></span><span></span>
+        </div> -->
         <div class="container">
             <div class="title title_small promo__circle">Мене звати Роман Волошин</div>
-            <h1 class="title title_large promo__title">Я web-розробник з міста Львів</h1>
+            <h1 class="title title_large promo__title">Я web-розробник з міста Лева</h1>
             <div class="promo__buttons">
                 <a href="#" class="promo__link button">Портфоліо</a>
-                <a href="#" class="promo__link">Про мене</a>
+                <a href="#aboutMe" class="promo__link">Про мене</a>
             </div>
         </div>
     </section>
 
+    
 
-    <script src="/src/js/script.js"></script>
+
+
+
+
+
+
+    <section class="aboutMe" id="aboutMe">
+        <div class="container">
+            <div class="aboutMe__wrapper">
+                <div class="aboutMe__photo">
+                    <div class="aboutMe__slider">
+                        <input type="radio" name="slide" id="c1" checked>
+                        <label for="c1" class="aboutMe__card">
+                            <div class="aboutMe__row">
+                                <div class="aboutMe__icon">1</div>
+                                <div class="aboutMe__dscr">
+                                    <h4>Це я</h4>
+                                    <p>Наглажений</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c2">
+                        <label for="c2" class="aboutMe__card">
+                            <div class="aboutMe__row">
+                                <div class="aboutMe__icon">2</div>
+                                <div class="aboutMe__dscr">
+                                    <h4>І це тоже я</h4>
+                                    <p>Домашній</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c3">
+                        <label for="c3" class="aboutMe__card">
+                            <div class="aboutMe__row">
+                                <div class="aboutMe__icon">3</div>
+                                <div class="aboutMe__dscr">
+                                    <h4>Впринципі це тоже я</h4>
+                                    <p>Побрився</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c4">
+                        <label for="c4" class="aboutMe__card">
+                                <div class="aboutMe__row">
+                                    <a href="https://www.instagram.com/romyl_romulus/?next=%2F" target="_blank" class="aboutMe__icon">4</a>
+                                    <div class="aboutMe__dscr">
+                                        <a href="https://www.instagram.com/romyl_romulus/?next=%2F" target="_blank"><h4>Нажми</h4></a>
+                                        <a href="https://www.instagram.com/romyl_romulus/?next=%2F" target="_blank"><p>Жми там інста моя</p></a>
+                                    </div>
+                                </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="aboutMe__present">
+                    <h2 class="aboutMe__name">Мене звати Роман</h2>
+                    <div class="aboutMe__divider"></div>
+                    <span class="aboutMe__text">Я студент 2 курсу ЗУНУ (Західноукраїнського національного університету). Захоплювався веб-розробкою ще з шкільних років. Маю практичний досвід у створенні сайтів протягом року, володію HTML, CSS, JavaScript, jQuery, Bootstrap 4/5, Sass/Scss/Less. Досвідчений користувач Git та GitHub. Спеціалізуюсь на фронтенді, постійно вдосконалююсь у сфері веб-технологій.</span>
+                </div>
+                <div class="aboutMe__skill">
+                    <div class="aboutMe__skill-one"><h3><i class='bx bxl-html5' style='color:#84e55d'></i>HTML5</h3><span class="aboutMe__text small">HTML5 - це ніби скелет веб-сторінки: він визначає, які елементи (заголовки, параграфи, зображення тощо) будуть на сторінці і як вони будуть розташовані.</span></div>
+                    <div class="aboutMe__skill-two"><h3><i class='bx bxl-css3' style='color:#84e55d'></i>CSS3</h3><span class="aboutMe__text small">CSS3 – це інструмент для створення красивих інтер'єрів для веб-сторінок. За допомогою нього можна вибирати кольори, шрифти, розташування елементів і багато іншого.</span></div>
+                    <div class="aboutMe__skill-three"><h3><i class='bx bxl-javascript' style='color:#84e55d'></i>JavaScript</h3><span class="aboutMe__text small">JavaScript – це мова програмування, яка додає інтерактивність та динаміку до статичних веб-сторінок. JavaScript надає веб-сторінці життя та функціональність.</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- <section class="aboutMe" id="aboutMe">
+        <div class="container">
+            <div class="aboutMe__wrapper">
+                <div class="aboutMe__photo">
+                    <a href="https://www.instagram.com/romyl_romulus/?next=%2F" target="_blank" class="aboutMe__instagram">
+                        <img src="img/yourself/photoOfMe.jpg" alt="myPhotoSchool">
+                    </a>
+                </div>
+                <div class="aboutMe__present">
+                    <h2 class="aboutMe__name">Мене звати Роман</h2>
+                    <div class="aboutMe__divider"></div>
+                    <span class="aboutMe__text">Я студент 2 курсу ЗУНУ (Західноукраїнського національного університету). Захоплювався веб-розробкою ще з шкільних років. Маю практичний досвід у створенні сайтів протягом року, володію HTML, CSS, JavaScript, jQuery, Bootstrap 4/5, Sass/Scss/Less. Досвідчений користувач Git та GitHub. Спеціалізуюсь на фронтенді, постійно вдосконалююсь у сфері веб-технологій.</span>
+                </div>
+                <div class="aboutMe__skill">
+                    <div class="aboutMe__skill-one"><h3><i class='bx bxl-html5' style='color:#84e55d'  ></i>HTML5</h3><span class="aboutMe__text small">HTML5 - це ніби скелет веб-сторінки: він визначає, які елементи (заголовки, параграфи, зображення тощо) будуть на сторінці і як вони будуть розташовані.</span></div>
+                    <div class="aboutMe__skill-two"><h3><i class='bx bxl-css3' style='color:#84e55d' ></i>CSS3</h3><span class="aboutMe__text small">CSS3 – це інструмент для створення красивих інтер'єрів для веб-сторінок. За допомгою нього можна вибирати кольори, шрифти, розташування елементів і багато іншого.</span></div>
+                    <div class="aboutMe__skill-three"><h3><i class='bx bxl-javascript' style='color:#84e55d' ></i>JavaScript</h3><span class="aboutMe__text small">JavaScript – це мова програмування, яка додає інтерактивність та динаміку до статичних веб-сторінок. JavaScript надає веб-сторінці життя та функціональність.</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+     -->
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
